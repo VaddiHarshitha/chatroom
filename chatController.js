@@ -1,6 +1,6 @@
-const ChatRoom = require('../models/ChatRoom');
-const Message = require('../models/Message');
-const User = require('../models/User');
+const ChatRoom = require('../ChatRoom');
+const Message = require('../Message');
+const User = require('../User');
 
 exports.createRoom = async (req, res) => {
   const { name, users, isGroup } = req.body;
